@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
+  background-color: #2c3e50;
+}
+.header h4 {
+  font-weight: 700;
+  font-size: 2.8rem; /* 1 rem = 16px */
+  font-family: "Times New Roman", Times, serif;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+.app-main {
+  min-height: 10vh;
+  width: 30vw;
+  margin: 50px auto;
+  background-color: #081b31;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.input-box {
+  width: 100%;
+  background-color: azure;
+  color: aqua;
+  height: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  outline: auto; /* input box ke undar ek border aa sakta hai */
+  border-radius: 10px;
+}
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: #eff1f3;
+  display: none;
+  background: linear-gradient(to top, #da1e4e, #e4603a);
+  margin-top: 10px;
+}
+.location-deatils {
+  font-weight: bold;
+}
+.weather-status {
+  padding: 20px;
+}
+.temp {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+.weather {
+  margin-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.day_details {
+  padding: 20px;
+}
+.sun-detail,
+.basic {
+  font-size: 1rem;
+}
+#weather-icon {
+  color: black;
+}
+.footer {
+  justify-content: center;
+  text-align: center;
+  background-color: #0a213b;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem;
+}
+.social-icons {
+  list-style-type: none;
+  line-height: 4rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  gap: 9rem;
+  background-color: #0a213b;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover; /* yeh apni image ko div ke according sahi kar leta hai */
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 16rem;
+}
+.social-icons:hover {
+  cursor: pointer;
+}
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1.5rem;
+  color: #0f6fdc;
+}
+
+li {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* using thia meadia query */
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 95%;
+    padding: 10px;
+  }
+  body {
+    min-height: 94vh;
+  }
+}
